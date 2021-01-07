@@ -1,5 +1,3 @@
-<p>orbit-list works!</p>
-
 <h3>Orbit Report</h3>
 <table>
    <tr class="header-row">
@@ -9,6 +7,16 @@
       <th>Orbit Type</th>
       <th>Launch Date</th>
    </tr>
-   <tr *ngFor="let satellite of satellites"></tr>
+   <tr *ngFor="let satellite of satellites">
+      <th>{{satellite.name}}</th>
+      <th>{{satellite.type}}</th>
+      <th>{{satellite.operational}}</th>
+      <th>{{satellite.orbitType}}</th>
+      <th>{{satellite.launchDate}}</th>
+
+   </tr>
+   
+    
+   
     
 </table>
